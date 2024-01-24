@@ -1,0 +1,188 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+body {
+    background: linear-gradient(to bottom right, #142038, #37142c);
+    height: 100vh;
+}
+
+header {
+    height: 50px;
+    padding: 20px;
+}
+
+header h1 {
+    line-height: 50px;
+}
+
+.copyrigth {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+#container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.pantalla {
+    display: flex;
+    flex-flow: column wrap;
+    width: 1000px;
+    height: 520px;
+    background: url(img/fondojpg.jpg);
+    border: 1px solid gray;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.escoger {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.escoger h2 {
+    padding: 10px;
+}
+
+.ejercicios {
+    height: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.desafio {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    height: 105px;
+    flex-basis: calc((100% / 2) - 47px);
+    background: transparent;
+    backdrop-filter: grayscale(80%);
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.desafio:hover {
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px white;
+}
+
+.desafio h3 {
+    color: white;
+    flex-basis: 100%;
+}
+
+.boton {
+    height: 40px;
+    font-weight: 700;
+    color: gray;
+    background-color: rgb(199, 190, 190);
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    border: solid 0.125rem #121212;
+    transition: transform 50ms, box-shadow 50ms;
+}
+
+.boton:hover {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+
+.boton:active {
+    transform: translate(0.125rem, 0.125rem);
+    box-shadow: 0rem 0.125rem #121212;
+}
+
+.cinco {
+    margin: 10px;
+    flex-basis: calc(100% - 65px);
+}
+
+.btnuno {
+    margin: 5px;
+    flex-basis: calc((100% / 3) - 10px);
+}
+
+.btndos {
+    margin: 1px;
+    flex-basis: calc((100% / 3) - 10px);
+}
+
+.btntres {
+    font-size: 12px;
+    margin: 1px;
+    flex-basis: calc((100% / 4) - 8px);
+}
+
+.btncuatro {
+    margin: 2px;
+    flex-basis: calc((100% / 6) - 8px);
+}
+
+
+@media (max-width: 813px) {
+    .boton {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 646px) {
+    header h1 {
+        font-size: 20px;
+    }
+    .boton {
+        font-size: 8px;
+    }
+    .btnuno {
+        margin: 3px;
+    }
+}
+
+@media (max-width: 438px) {
+    .desafio h3 {
+        font-size: 15px;
+    }
+    .escoger h2 {
+        font-size: 15px;
+    }
+    .btnuno {
+        margin: 1px;
+    }
+}
+
+@media (max-width: 391px) {
+    header h1 {
+        font-size: 15px;
+    }
+    .copyrigth{
+        font-size: 5px;
+    }
+}
+
+@media (max-width: 338px) {
+    .desafio h3 {
+        font-size: 10px;
+    }
+    .btnuno {
+        width: 20px;
+        height: 20px;
+        font-size: 5px;
+        margin: 0px;
+    }
+}
